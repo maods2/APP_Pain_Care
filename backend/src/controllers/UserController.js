@@ -5,6 +5,7 @@ module.exports ={
     const results = await knex('users')
     return res.json(results)
   },
+
   async create(req, res, next){
     try {
       const user = { ...req.body }
@@ -14,6 +15,7 @@ module.exports ={
       next(error)
     }   
   },
+
   async update(req, res, next){
     try {
       const user = { ...req.body }
@@ -29,6 +31,7 @@ module.exports ={
         next(error)
     }
   },
+  
   async delete(req, res, next){
     try {
       const { id } = req.params
