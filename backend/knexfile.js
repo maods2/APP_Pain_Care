@@ -33,10 +33,10 @@ module.exports = {
   development: {
     client: 'mysql',
     connection: {
-        host: '85.10.205.173',
-        user: 'matheus_ebrains',
-        password: 'ebrainsteste',
-        database: 'ebrains'
+        host: 'localhost',
+        user: 'root',
+        password: '160195',
+        database: 'appsaude'
     },
     pool: {
         min: 2,
